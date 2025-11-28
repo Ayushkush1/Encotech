@@ -5,10 +5,11 @@ import Navigation from './components/Navigation';
 import heroField from "/assets/hero-field.jpg";
 import WhoWeAre from './components/WhoWeAre';
 import HowItWorks from './components/HowItWorks';
-import FaqSection from './components/FaqSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import ReferencesSection from './components/ReferencesSection';
+import ClientsMarquee from './components/ClientsMarquee';
+import BlogSection from './components/BlogSection';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       <ReferencesSection />
       <HowItWorks />
       <WhoWeAre />
-      <FaqSection />
+      <ClientsMarquee />
+      <BlogSection />
       <CTASection />  
       <Footer />
      

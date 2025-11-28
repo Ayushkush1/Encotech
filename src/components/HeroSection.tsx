@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Leaf, Wind, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -21,9 +22,22 @@ const HeroSection = () => {
         transition={{ delay: 0.1, type: 'spring', stiffness: 120, damping: 20 }}
       >
         <div className="max-w-5xl mx-auto text-center px-4">
-          <span className="inline-block px-4 py-1.5 bg-brand-tint text-brand text-sm font-semibold rounded-full mb-6">
-            Encotec
-          </span>
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-brand-tint rounded-full mb-6">
+            <div className="flex items-center gap-1">
+              <Leaf className="w-4 h-4 text-brand" />
+              <span className="text-xs font-medium text-brand">Renewables</span>
+            </div>
+            <span className="w-1 h-1 rounded-full bg-brand/30" />
+            <div className="flex items-center gap-1">
+              <Wind className="w-4 h-4 text-brand" />
+              <span className="text-xs font-medium text-brand">Wind Power</span>
+            </div>
+            <span className="w-1 h-1 rounded-full bg-brand/30" />
+            <div className="flex items-center gap-1">
+              <Zap className="w-4 h-4 text-brand" />
+              <span className="text-xs font-medium text-brand">EV Charging</span>
+            </div>
+          </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold text-black/95 mb-8 leading-tight" style={{ animationDelay: "0.1s" }}>
             The <span className="text-brand">Future</span> of Energy is Now!

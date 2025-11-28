@@ -75,7 +75,7 @@ export default function ReferencesSection() {
   const visible = expanded ? references : references.slice(0, 3);
   return (
     <motion.section
-      className="py-24 bg-gray-50 relative overflow-hidden px-28"
+      className="py-24 bg-gradient-to-br from-[#c61b5a]/5 via-[#c61b5a]/5 to-white relative overflow-hidden px-28"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
@@ -88,6 +88,9 @@ export default function ReferencesSection() {
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-brand-tint text-brand text-xs font-semibold rounded-full mb-4">OUR REFERENCES</span>
           <h2 className="text-4xl font-bold text-black/95">Recent Projects</h2>
+          <p className="mt-3 max-w-2xl mx-auto text-gray-600">
+            Discover how we’ve helped leading energy providers modernize infrastructure, boost efficiency, and accelerate the transition to cleaner power.
+          </p>
         </div>
 
         <motion.div
@@ -125,7 +128,7 @@ export default function ReferencesSection() {
               </div>
 
               <div className={ref.highlight ? "absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/40 to-transparent" : ""} />
-              <img src={ref.image} alt={ref.title} className={ref.highlight ? "w-full h-48 object-cover" : "w-full h-44 object-cover"} />
+              <img src={ref.image} alt={ref.title} className={ref.highlight ? "w-full h-48 object-cover" : "w-full h-48 object-cover"} />
             </motion.article>
           ))}
           </AnimatePresence>

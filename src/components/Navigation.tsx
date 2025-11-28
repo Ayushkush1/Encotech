@@ -17,16 +17,17 @@ export default function Navigation() {
             </div>
 
             <div className="hidden lg:flex items-center gap-8">
-              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Billing & Payment</a>
-              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Outages</a>
-              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Services & Price</a>
-              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Emergency & Safety</a>
-              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Company</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">About Us</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Services</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Projects</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Blogs</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Media</a>
+              <a href="#" className="text-gray-700 hover:text-brand transition-colors text-sm">Career</a>
             </div>
 
             <div className="flex items-center gap-4">
               <button className="hidden sm:block px-6 py-2 border border-gray-900 rounded-full text-sm hover:bg-gray-900 hover:text-white transition-colors">
-                Sign In
+                Contact
               </button>
               <button className="lg:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                 <Menu className="w-6 h-6" />
@@ -41,12 +42,13 @@ export default function Navigation() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 bg-white">
             <div className="px-4 py-4 space-y-3">
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Billing & Payment</a>
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Outages</a>
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Services & Price</a>
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Save Money & Energy</a>
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Emergency & Safety</a>
-              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Company</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">About Us</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Services</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Projects</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Blogs</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Media</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Career</a>
+              <a href="#" className="block text-gray-700 hover:text-brand transition-colors text-sm">Contact</a>
             </div>
           </div>
         )}

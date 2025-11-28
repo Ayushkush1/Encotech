@@ -12,7 +12,7 @@ const stats = [
 const AboutSection = () => {
   return (
     <motion.section
-      className="py-24 bg-gray-50 relative overflow-hidden px-28"
+      className="py-24  bg-gradient-to-br from-[#c61b5a]/5 via-[#c61b5a]/5 to-white relative overflow-hidden px-28"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}

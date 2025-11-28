@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const CTASection = () => {
   return (
-    <motion.section className="py-16 bg-gray-50 relative overflow-hidden" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ type: 'spring', stiffness: 140, damping: 22 }}>
+    <motion.section className="py-16 relative overflow-hidden" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ type: 'spring', stiffness: 140, damping: 22 }}>
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#c61b5a]/8 via-transparent to-[#c61b5a]/8" />
       <div className="absolute top-1/2 left-0 w-72 h-72 bg-[#c61b5a]/12 rounded-full blur-3xl -translate-y-1/2" />
@@ -17,12 +17,12 @@ const CTASection = () => {
             <span className="text-[#c61b5a] text-xs font-medium">Join the Clean Energy Revolution</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-black/95 mb-6">
+          <h2 className="text-4xl font-bold text-black/95 mb-6">
             Ready to Power Your Future
             <span className="text-[#c61b5a]"> Sustainably?</span>
           </h2>
           
-          <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+          <p className="text-md text-gray-700 mb-10 max-w-2xl mx-auto">
             Make the switch today and join thousands of customers already enjoying clean, affordable, renewable energy. Your journey to a greener future starts here.
           </p>
           

@@ -1,11 +1,11 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const footerLinks = {
-  company: ["About Us", "Careers", "News", "Investors", "Sustainability"],
-  services: ["Residential", "Business", "Renewable Energy", "EV Charging", "Solar Solutions"],
-  support: ["Help Center", "Contact Us", "Report Outage", "Safety", "FAQs"],
-  legal: ["Privacy Policy", "Terms of Service", "Accessibility", "Cookie Policy"],
+  company: ["About Us", "Leadership/Team", "Certifications & Partners", "Careers"],
+  services: ["Services Overview", "Renewable Energy", "EV Charging", "O&M", "Overhauling"],
+  resources: ["Case Studies", "Media & Blog", "Downloads", "Contact"],
+  
 };
 
 const Footer = () => {
@@ -97,6 +97,8 @@ const Footer = () => {
             </motion.div>
           ))}
         </div>
+
+       
 
         <motion.div className="border-t border-card/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2, type: 'spring', stiffness: 120, damping: 20 }}>
           <p className="text-card/50 text-sm">
