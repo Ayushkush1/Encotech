@@ -8,6 +8,18 @@ const footerLinks = {
   
 };
 
+// (certifications defined above)
+
+const certifications = [
+  { label: "ISO 9001", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ISO_Logo_%282018%29.svg/200px-ISO_Logo_%282018%29.svg.png" },
+  { label: "ISO 14001", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ISO_Logo_%282018%29.svg/200px-ISO_Logo_%282018%29.svg.png" },
+  { label: "ISO 45001", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ISO_Logo_%282018%29.svg/200px-ISO_Logo_%282018%29.svg.png" },
+  { label: "IEC", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/International_Electrotechnical_Commission_logo.svg/200px-International_Electrotechnical_Commission_logo.svg.png" },
+  { label: "CE", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Conformit%C3%A9_Europ%C3%A9enne_%28CE%29_logo.svg/200px-Conformit%C3%A9_Europ%C3%A9enne_%28CE%29_logo.svg.png" },
+  { label: "BIS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bureau_of_Indian_Standards_logo.svg/200px-Bureau_of_Indian_Standards_logo.svg.png" },
+  { label: "RoHS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rohs_logo.svg/200px-Rohs_logo.svg.png" },
+];
+
 const Footer = () => {
   return (
     <motion.footer
@@ -96,6 +108,25 @@ const Footer = () => {
               </ul>
             </motion.div>
           ))}
+
+          <motion.div initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 120, damping: 20, delay: 0.08 * 4 }}>
+            <h4 className="font-semibold text-card mb-4">Certifications</h4>
+            <div className="grid grid-cols-2 gap-3">
+              {certifications.slice(0, 6).map((c) => (
+                <div key={c.label} className="flex items-center gap-2 p-2 rounded-lg bg-white/10 border border-card/20">
+                  <img
+                    src={c.src}
+                    alt={c.label}
+                    className="h-8 w-auto object-contain bg-white rounded-md p-1"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.display = "none";
+                    }}
+                  />
+                  <span className="text-card/80 text-xs font-medium">{c.label}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
 
        
