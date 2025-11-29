@@ -112,10 +112,10 @@ const Footer = () => {
             <h4 className="font-semibold text-card mb-4">Certifications</h4>
             <div className="grid grid-cols-2 sm:grid-rows-3 lg:grid-rows-4 gap-3">
               {certifications.map((c) => (
-                <div key={c.src} className="flex items-center gap-2 p-2 rounded-lg bg-white/10 border border-card/20">
+                <div key={c.src} className="flex items-center gap-2 p-2 rounded-lg border border-card/20">
                   <img
                     src={c.src}
-                    className="h-16 w-auto object-contain bg-white rounded-md p-1"
+                    className="h-16 w-auto object-contain rounded-md p-1"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = "none";
                     }}
